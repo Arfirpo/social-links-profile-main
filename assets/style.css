@@ -1,0 +1,134 @@
+/*  VARIABLES  */
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --darkGrey: hsl(0, 0%, 12%);
+  --offBlack: hsl(0, 0%, 8%);
+}
+
+/*  RESET  */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* TEXT FONT */
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-VariableFont_slnt\,wght.ttf");
+  font-style: normal;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  background: var(--offBlack);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .625rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  min-width: 17.625rem;
+  width: 88%;
+  max-width: 26.5625rem;
+  height: 580px;
+  padding: 20px 24px;
+  background: var(--darkGrey);
+  color: var(--white);
+  border-radius: 0.75rem;
+}
+
+/* FIRST SECTION */
+
+.user__profile {
+  width: 100%;
+  height: 38%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.user__profile-avatar-container {
+  width: 5.3125rem;
+  height: 5.3125rem;
+  border-radius: 50px;
+  background: url(./images/avatar-jessica.jpeg) no-repeat center/contain;
+}
+
+.user__profile-name {
+  margin-bottom: .625rem;
+}
+
+.user__profile-location {
+  color: var(--green);
+}
+
+.user__profile-description {
+  font-size: .79rem;
+  color: hsl(0, 0%, 82%);
+}
+
+
+/* SECOND SECTION */
+.user__social-networks {
+  width: 100%;
+  height: 56.4%;
+}
+
+ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  border-radius: 8px;
+  width: 100%;
+  height: 46px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font-size: .75rem;
+  font-weight: bold;
+  background: var(--grey);
+
+}
+
+
+/*  FOOTER  */
+
+.attribution {
+  min-width: 17.625rem;
+  width: 88%;
+  max-width: 26.5625rem;
+  font-size: 0.56rem;
+  text-align: center;
+}
+
+.attribution > p {
+  color: var(--green);
+}
+.attribution a {
+  color: var(--white);
+  text-decoration: none;
+}

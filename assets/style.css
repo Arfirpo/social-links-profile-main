@@ -46,8 +46,8 @@ body {
   min-width: 17.625rem;
   width: 88%;
   max-width: 26.5625rem;
-  height: 580px;
-  padding: 20px 24px;
+  height: 36.25rem;
+  padding: 1.25rem 1.5rem;
   background: var(--darkGrey);
   color: var(--white);
   border-radius: 0.75rem;
@@ -68,7 +68,7 @@ body {
 .user__profile-avatar-container {
   width: 5.3125rem;
   height: 5.3125rem;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   background: url(./images/avatar-jessica.jpeg) no-repeat center/contain;
 }
 
@@ -102,9 +102,9 @@ ul {
 }
 
 li {
-  border-radius: 8px;
+  border-radius: .5rem;
   width: 100%;
-  height: 46px;
+  height: 2.875rem;
   display: grid;
   place-content: center;
   text-align: center;

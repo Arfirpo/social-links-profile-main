@@ -42,6 +42,7 @@ body {
 .card-container {
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 1.875rem;
   min-width: 17.625rem;
   width: 88%;
@@ -66,6 +67,7 @@ body {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  
 }
 
 .user__profile-avatar {
@@ -140,9 +142,11 @@ li {
 /*  FOOTER  */
 
 .attribution {
-  min-width: 17.625rem;
-  width: 88%;
-  max-width: 26.5625rem;
+  position: absolute;
+  bottom: -2.1875rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   font-size: 0.56rem;
   text-align: center;
   @media (min-width: 23.5rem) {
